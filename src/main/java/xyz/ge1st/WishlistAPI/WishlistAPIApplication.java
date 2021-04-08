@@ -9,9 +9,6 @@ public class WishlistAPIApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(WishlistAPIApplication.class, args);
-
-		//ctx.getBean("WishlistItemRepository", WishlistItemRepository.class);
-
 	}
 
 }

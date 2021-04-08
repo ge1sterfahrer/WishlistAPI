@@ -1,0 +1,1 @@
+docker buildx build --build-arg JAR_FILE=target/*.jar --platform linux/arm/7 -t ge1sterfahrer/wishlistapi .
