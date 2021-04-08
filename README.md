@@ -3,9 +3,10 @@
  
 ## Usage
  To use this API clone the repository or download the newest release from GitHub.
- The port used in this application is 8081, please see the application.properties if you need to run with a different port.
+ The standart port used in this application is 8081, you can change that in the application.properties if you need to.
  
- If run locally the API will listen on localhost:8081/wishlist_api and needs two parameters:
+ If run locally the API will listen on localhost:8081/wishlist_api.
+ I will need two parameters:
  - The Top-Level-Domain of your wishlist ("de", "com", "co.uk")
  - The Wishlist ID found in the Wishlist URL
 
@@ -19,11 +20,10 @@
  - Price
  - Amount needed
  - Amount received
-
-## wHy DoNt U iNcLuDe ThE iTeM lInK???
-For simplicity I gather all the data from the printview version of the Amazon Wishlist which does not include links to the items.
-
+ 
+ ## PrintView Parsing
+ This API parses the printview of a wishlist, which doesn't include a link to the actual item.
+ It includes the amount of items already bought though, which is a nice tradeoff.
 
  ## Technical Details
  This is a Spring Boot application using Jsoup for HTML parsing and GSON for generating valid JSON from objects.
- 
